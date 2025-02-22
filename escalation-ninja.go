@@ -294,8 +294,6 @@ func joinChannel(channelID string) error {
 	return nil
 }
 
-// creating a function to handle the Slack Request
-
 /*
 parsing a little bit - I'll be expecting a string like
 
