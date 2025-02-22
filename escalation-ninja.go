@@ -240,7 +240,7 @@ func convertUserTagsToIDs(userTags []string) []string {
 After a few tries, the bot still failed - the channel gets created correctly, but the bot fails the invitation
 
 	yorodinson@YorOdinSon ~ % curl -X POST "https://slack.com/api/conversations.invite" \
-	     -H "Authorization: Bearer xoxb-8469368138855-8485534420930-90tZgeZbpCotXLDzcKr5PI8m" \
+	     -H "Authorization: Bearer xoxb- \
 	     -H "Content-Type: application/json" \
 	     -d '{"channel":"C08EE7BU5MH","users":"U12345,U67890"}'
 
