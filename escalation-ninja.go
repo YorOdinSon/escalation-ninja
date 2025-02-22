@@ -295,55 +295,6 @@ func joinChannel(channelID string) error {
 }
 
 // creating a function to handle the Slack Request
-/*
-old handleSlackCommand
-
-func handleSlackCommand(w http.ResponseWriter, r *http.Request) {
-
-	//first: Error handling the httpRequest
-	err := r.ParseForm()
-	if err != nil {
-		http.Error(w, "❌ Failed to parse request!", http.StatusBadRequest)
-		fmt.Print("Sorry dude! 😩")
-		return
-	}
-
-	slackReq := SlackRequest{
-		Token:       r.FormValue("token"),
-		TeamID:      r.FormValue("team_id"),
-		ChannelID:   r.FormValue("channel_id"),
-		TeamDomain:  r.FormValue("team_domain"),
-		ChannelName: r.FormValue("channel_name"),
-		UserID:      r.FormValue("user_id"),
-		UserName:    r.FormValue("user_name"),
-		Command:     r.FormValue("command"),
-		Text:        r.FormValue("text"),
-		ResponseURL: r.FormValue("response_url"),
-		TriggerID:   r.FormValue("trigger_id"),
-	}
-
-	//Check #1 - making sure it's an expected command!
-	if !(slackReq.Command == "/ninjaescal" || slackReq.Command == "/ninjaescalate") {
-		http.Error(w, "❌ Invalid Command", http.StatusForbidden)
-		fmt.Print("❌ Invalid Command - Start your request with '/ninjaescal' or '/ninjaescalate'")
-		return
-	}
-
-	//Check #2 - Processing the command arguments to see if a case link is provided
-	args := strings.TrimSpace(slackReq.Text)
-	if args == "" {
-		fmt.Fprintln(w, "⚠ Please provide a case link!")
-		return
-	}
-
-	//Responding to Slack
-	response := fmt.Sprintf("Creating escalation channel for: %s", args)
-	fmt.Fprintln(w, response)
-
-	log.Printf("Received command from %s: %s", slackReq.UserName, args)
-
-} //function handleSlackCommand end
-*/
 
 /*
 parsing a little bit - I'll be expecting a string like
