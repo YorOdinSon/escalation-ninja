@@ -407,6 +407,9 @@ func main() {
 		port = "9090"
 	}
 
+	log.Printf("✅ Server is trying to listen on: http://0.0.0.0:%s", port)
+	log.Fatal(http.ListenAndServe("0.0.0.0:"+port, nil))
+
 	log.Printf("Server running on port %s", port)
 	log.Fatal(http.ListenAndServe(":"+port, r))
 }
