@@ -1,0 +1,304 @@
+{
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations,customfield_10010.requestTypePractice",
+    "id": "10000",
+    "self": "https://thepolyglotlab.atlassian.net/rest/api/3/issue/10000",
+    "key": "BUG-1",
+    "fields": {
+        "statuscategorychangedate": "2025-03-11T17:09:30.186+0000",
+        "issuetype": {
+            "self": "https://thepolyglotlab.atlassian.net/rest/api/3/issuetype/10008",
+            "id": "10008",
+            "description": "Epics track collections of related bugs, stories, and tasks.",
+            "iconUrl": "https://thepolyglotlab.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10307?size=medium",
+            "name": "Epic",
+            "subtask": false,
+            "avatarId": 10307,
+            "entityId": "6c7f191b-380e-4711-801c-91bfd2902454",
+            "hierarchyLevel": 1
+        },
+        "timespent": null,
+        "customfield_10030": null,
+        "customfield_10031": null,
+        "project": {
+            "self": "https://thepolyglotlab.atlassian.net/rest/api/3/project/10001",
+            "id": "10001",
+            "key": "BUG",
+            "name": "Bug Hunting",
+            "projectTypeKey": "software",
+            "simplified": true,
+            "avatarUrls": {
+                "48x48": "https://thepolyglotlab.atlassian.net/rest/api/3/universal_avatar/view/type/project/avatar/10407",
+                "24x24": "https://thepolyglotlab.atlassian.net/rest/api/3/universal_avatar/view/type/project/avatar/10407?size=small",
+                "16x16": "https://thepolyglotlab.atlassian.net/rest/api/3/universal_avatar/view/type/project/avatar/10407?size=xsmall",
+                "32x32": "https://thepolyglotlab.atlassian.net/rest/api/3/universal_avatar/view/type/project/avatar/10407?size=medium"
+            }
+        },
+        "customfield_10032": null,
+        "fixVersions": [],
+        "customfield_10034": null,
+        "aggregatetimespent": null,
+        "resolution": null,
+        "customfield_10035": null,
+        "customfield_10027": null,
+        "customfield_10028": null,
+        "customfield_10029": null,
+        "resolutiondate": null,
+        "workratio": -1,
+        "watches": {
+            "self": "https://thepolyglotlab.atlassian.net/rest/api/3/issue/BUG-1/watchers",
+            "watchCount": 1,
+            "isWatching": true
+        },
+        "issuerestriction": {
+            "issuerestrictions": {},
+            "shouldDisplay": true
+        },
+        "lastViewed": "2025-03-11T17:09:53.889+0000",
+        "created": "2025-03-11T17:09:29.052+0000",
+        "customfield_10020": null,
+        "customfield_10021": null,
+        "customfield_10022": null,
+        "priority": {
+            "self": "https://thepolyglotlab.atlassian.net/rest/api/3/priority/3",
+            "iconUrl": "https://thepolyglotlab.atlassian.net/images/icons/priorities/medium.svg",
+            "name": "Medium",
+            "id": "3"
+        },
+        "customfield_10023": null,
+        "customfield_10024": null,
+        "customfield_10025": null,
+        "labels": [],
+        "customfield_10026": null,
+        "customfield_10016": null,
+        "customfield_10017": "dark_blue",
+        "customfield_10018": {
+            "hasEpicLinkFieldDependency": false,
+            "showField": false,
+            "nonEditableReason": {
+                "reason": "EPIC_LINK_SHOULD_BE_USED",
+                "message": "To set an epic as the parent, use the epic link instead"
+            }
+        },
+        "customfield_10019": "0|hzzzzz:",
+        "timeestimate": null,
+        "aggregatetimeoriginalestimate": null,
+        "versions": [],
+        "issuelinks": [],
+        "assignee": {
+            "self": "https://thepolyglotlab.atlassian.net/rest/api/3/user?accountId=712020%3Af96b1124-c6a5-4b55-9d09-ff9ecda0e57a",
+            "accountId": "712020:f96b1124-c6a5-4b55-9d09-ff9ecda0e57a",
+            "emailAddress": "yor.francavilla@gmail.com",
+            "avatarUrls": {
+                "48x48": "https://secure.gravatar.com/avatar/febc8845350f17b9b4ef1e79c141dbe8?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FYF-5.png",
+                "24x24": "https://secure.gravatar.com/avatar/febc8845350f17b9b4ef1e79c141dbe8?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FYF-5.png",
+                "16x16": "https://secure.gravatar.com/avatar/febc8845350f17b9b4ef1e79c141dbe8?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FYF-5.png",
+                "32x32": "https://secure.gravatar.com/avatar/febc8845350f17b9b4ef1e79c141dbe8?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FYF-5.png"
+            },
+            "displayName": "Yor Francavilla",
+            "active": true,
+            "timeZone": "Europe/London",
+            "accountType": "atlassian"
+        },
+        "updated": "2025-03-11T17:09:30.275+0000",
+        "status": {
+            "self": "https://thepolyglotlab.atlassian.net/rest/api/3/status/10003",
+            "description": "",
+            "iconUrl": "https://thepolyglotlab.atlassian.net/",
+            "name": "To Do",
+            "id": "10003",
+            "statusCategory": {
+                "self": "https://thepolyglotlab.atlassian.net/rest/api/3/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "To Do"
+            }
+        },
+        "components": [],
+        "timeoriginalestimate": null,
+        "description": {
+            "type": "doc",
+            "version": 1,
+            "content": [
+                {
+                    "type": "paragraph",
+                    "content": [
+                        {
+                            "type": "text",
+                            "text": "File",
+                            "marks": [
+                                {
+                                    "type": "strong"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "text",
+                            "text": ": jira.go"
+                        }
+                    ]
+                },
+                {
+                    "type": "paragraph",
+                    "content": [
+                        {
+                            "type": "text",
+                            "text": "Goal",
+                            "marks": [
+                                {
+                                    "type": "strong"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "text",
+                            "text": ":"
+                        }
+                    ]
+                },
+                {
+                    "type": "bulletList",
+                    "content": [
+                        {
+                            "type": "listItem",
+                            "content": [
+                                {
+                                    "type": "paragraph",
+                                    "content": [
+                                        {
+                                            "type": "text",
+                                            "text": "to create a Jira API Token to read information from a case and push it to Slack"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "bulletList",
+                                    "content": [
+                                        {
+                                            "type": "listItem",
+                                            "content": [
+                                                {
+                                                    "type": "paragraph",
+                                                    "content": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "Priority - Description - Status"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "listItem",
+                            "content": [
+                                {
+                                    "type": "paragraph",
+                                    "content": [
+                                        {
+                                            "type": "text",
+                                            "text": "to test the API Token"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "listItem",
+                            "content": [
+                                {
+                                    "type": "paragraph",
+                                    "content": [
+                                        {
+                                            "type": "text",
+                                            "text": "to develop the code to handle the JSON and push the right information to the new channel"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "customfield_10010": null,
+        "customfield_10014": null,
+        "timetracking": {},
+        "customfield_10015": "2025-03-11",
+        "customfield_10005": null,
+        "customfield_10006": null,
+        "security": null,
+        "customfield_10007": null,
+        "customfield_10008": null,
+        "customfield_10009": null,
+        "aggregatetimeestimate": null,
+        "attachment": [],
+        "summary": "JIRA Integration for Slack Bot",
+        "creator": {
+            "self": "https://thepolyglotlab.atlassian.net/rest/api/3/user?accountId=712020%3Af96b1124-c6a5-4b55-9d09-ff9ecda0e57a",
+            "accountId": "712020:f96b1124-c6a5-4b55-9d09-ff9ecda0e57a",
+            "emailAddress": "yor.francavilla@gmail.com",
+            "avatarUrls": {
+                "48x48": "https://secure.gravatar.com/avatar/febc8845350f17b9b4ef1e79c141dbe8?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FYF-5.png",
+                "24x24": "https://secure.gravatar.com/avatar/febc8845350f17b9b4ef1e79c141dbe8?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FYF-5.png",
+                "16x16": "https://secure.gravatar.com/avatar/febc8845350f17b9b4ef1e79c141dbe8?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FYF-5.png",
+                "32x32": "https://secure.gravatar.com/avatar/febc8845350f17b9b4ef1e79c141dbe8?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FYF-5.png"
+            },
+            "displayName": "Yor Francavilla",
+            "active": true,
+            "timeZone": "Europe/London",
+            "accountType": "atlassian"
+        },
+        "subtasks": [],
+        "reporter": {
+            "self": "https://thepolyglotlab.atlassian.net/rest/api/3/user?accountId=712020%3Af96b1124-c6a5-4b55-9d09-ff9ecda0e57a",
+            "accountId": "712020:f96b1124-c6a5-4b55-9d09-ff9ecda0e57a",
+            "emailAddress": "yor.francavilla@gmail.com",
+            "avatarUrls": {
+                "48x48": "https://secure.gravatar.com/avatar/febc8845350f17b9b4ef1e79c141dbe8?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FYF-5.png",
+                "24x24": "https://secure.gravatar.com/avatar/febc8845350f17b9b4ef1e79c141dbe8?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FYF-5.png",
+                "16x16": "https://secure.gravatar.com/avatar/febc8845350f17b9b4ef1e79c141dbe8?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FYF-5.png",
+                "32x32": "https://secure.gravatar.com/avatar/febc8845350f17b9b4ef1e79c141dbe8?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FYF-5.png"
+            },
+            "displayName": "Yor Francavilla",
+            "active": true,
+            "timeZone": "Europe/London",
+            "accountType": "atlassian"
+        },
+        "aggregateprogress": {
+            "progress": 0,
+            "total": 0
+        },
+        "customfield_10001": null,
+        "customfield_10002": [],
+        "customfield_10003": null,
+        "customfield_10004": null,
+        "environment": null,
+        "duedate": null,
+        "progress": {
+            "progress": 0,
+            "total": 0
+        },
+        "comment": {
+            "comments": [],
+            "self": "https://thepolyglotlab.atlassian.net/rest/api/3/issue/10000/comment",
+            "maxResults": 0,
+            "total": 0,
+            "startAt": 0
+        },
+        "votes": {
+            "self": "https://thepolyglotlab.atlassian.net/rest/api/3/issue/BUG-1/votes",
+            "votes": 0,
+            "hasVoted": false
+        },
+        "worklog": {
+            "startAt": 0,
+            "maxResults": 20,
+            "total": 0,
+            "worklogs": []
+        }
+    }
+}
