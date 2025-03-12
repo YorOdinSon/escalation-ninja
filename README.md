@@ -6,6 +6,7 @@ A **Go-powered Slack bot** that automates the creation of escalation channels, e
 
 ✅ **Auto-creates Slack channels** for escalations  
 ✅ **Parses structured Slack commands**  
+✅ **Uses Jira API to pull the case information** and pass everything to Slack to shoot a brief Welcome Message 
 ✅ **Automatically invites the command user** (and optionally, other team members)  
 ✅ **Uses Slack API (`users.list`) to resolve `@usernames` to real Slack IDs**  
 ✅ **No PII** stored—fully safe for public repositories 🎉  
@@ -17,7 +18,7 @@ A **Go-powered Slack bot** that automates the creation of escalation channels, e
 ### 1️⃣ **Clone the Repo**  
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/escalation-ninja.git
+git clone https://github.com/YorOdinSon/escalation-ninja.git
 cd escalation-ninja
 ```
 
@@ -26,12 +27,17 @@ cd escalation-ninja
 Go to the Slack API Portal and create a new app
 Enable the following Bot Token Scopes under OAuth & Permissions:
 
-* commands
+* channels:join
 * channels:manage
 * channels:write.invites
-* channels:join
+* chat:write
+* commands
+* conversations.connect:manage
+* conversations.connect:write
 * groups:write
 * groups:write.invites
+* incoming-webhook
+* pins:write
 * users:read
 
 Install the app in your workspace and grab the Bot User OAuth Token (xoxb-...)
@@ -42,6 +48,8 @@ Create a .env file or export variables manually:
 
 ```bash
 export SLACK_BOT_TOKEN="xoxb-your-slack-bot-token"
+export JIRA_EMAIL="your-email-address-for-jira"
+export JIRA_API_TOKEN="your-jira-api-token"
 ```
 (For local development, you can use a .env file and load it using **godotenv**).
 
@@ -56,19 +64,24 @@ Your bot should now be listening for Slack commands!
 Slack Command Format:
 
 ```bash
-/ninjaescal case: <case-url> [invite: <@slack-tag> ...]
+/ninjaescal case: <case-url> client: <type-a-name> [invite: <@slack-tag> ...]
 ```
+or
+```bash
+/ninjaescalate case: <case-url> client: <type-a-name> [invite: <@slack-tag> ...]
+```
+_"invite:" is optional!_ - if you set nobody to invite, the bot will only invite you
 
 #### Example:
 
 ```bash
-/ninjaescal case: https://jira.company.com/browse/TICKET-1234 invite: @alice @bob
+/ninjaescal case: https://your-jira-domain/browse/TICKET-1234 invite: @alice @bob
 ```
 ✅ invite: is optional! If omitted, only the command user will be invited. 🥷
 
 ### 📦 Deployment
 
-Set SLACK_BOT_TOKEN as an environment variable
+Set SLACK_BOT_TOKEN - JIRA_EMAIL - JIRA_API_TOKEN as environment variables
 
 ### 🤝 Contributing
 
@@ -76,7 +89,7 @@ Pull requests are welcome! If you find a bug or want to suggest a feature, open 
 
 ### 🛡️ Security & Best Practices
 
-DO NOT hardcode secrets (SLACK_BOT_TOKEN). Use environment variables.
+DO NOT hardcode secrets (SLACK_BOT_TOKEN - JIRA_API_TOKEN). Use environment variables.
 DO NOT expose API keys in logs or public repositories.
 
 ### 🎉 Credits
