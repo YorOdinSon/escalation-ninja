@@ -18,7 +18,7 @@ A **Go-powered Slack bot** that automates the creation of escalation channels, e
 ### 1️⃣ **Clone the Repo**  
 
 ```bash
-git clone https://github.com/YorOdinSon/escalation-ninja.git
+git clone git@github.com:YorOdinSon/escalation-ninja.git
 cd escalation-ninja
 ```
 
